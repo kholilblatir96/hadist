@@ -1,5 +1,4 @@
 // api/hadistAPI.jsx
-
 export const getMultipleHadistBooks = async ({ hadistRiwayat, number }) => {
   try {
     const requests = hadistRiwayat.map((riwayat) =>
