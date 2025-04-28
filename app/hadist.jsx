@@ -1,15 +1,17 @@
-// app/index.jsx
+// app/hadist.jsx
 import React from 'react';
 import { View, FlatList, StyleSheet, TouchableOpacity, Text } from 'react-native';
 import { useRouter } from 'expo-router';
 
 const RIWAYATS = [
   { id: 'bukhari', name: 'HR. Bukhari' },
-  { id: 'ahmad', name: 'HR. Ahmad' },
+  { id: 'muslim', name: 'HR. Muslim' },
   { id: 'tirmidzi', name: 'HR. Tirmidzi' },
+  { id: 'abudaud', name: 'HR. Abu Daud' },
+  { id: 'ahmad', name: 'HR. Ahmad' },
 ];
 
-export default function Home() {
+export default function Hadist() {
   const router = useRouter();
 
   const renderCard = ({ item }) => (
@@ -45,5 +47,5 @@ const styles = StyleSheet.create({
     shadowColor: '#000',
     elevation: 3,
   },
-  title: { fontSize: 18, fontWeight: 'bold' },
+  title: { fontSize: 18, fontWeight: 'bold', textAlign: 'center' },
 });
