@@ -11,7 +11,6 @@ export const getMultipleHadistBooks = async ({ hadistRiwayat, number }) => {
         })
     );
     
-
     const results = await Promise.all(requests);
     return results;
   } catch (error) {
